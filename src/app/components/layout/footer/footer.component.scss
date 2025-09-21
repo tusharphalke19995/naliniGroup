@@ -1,0 +1,107 @@
+// Enhanced Footer Component Styles for NaliniUdyogSamuh
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.2));
+    position: relative;
+    
+    &:hover {
+        transform: scale(1.08) translateY(-3px);
+        filter: drop-shadow(0 8px 16px rgba(102, 126, 234, 0.3));
+    }
+    
+    // Subtle glow effect for dark backgrounds
+    &::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: -1;
+    }
+    
+    &:hover::before {
+        opacity: 0.4;
+    }
+}
+
+// Enhanced responsive footer logo
+@media (max-width: 768px) {
+    .footer-logo {
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        height: 30px;
+    }
+}
+
+// Enhanced logo container styling
+.single-footer-widget .logo {
+    margin-bottom: 25px;
+    position: relative;
+    
+    a {
+        display: inline-block;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        
+        &:hover {
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+        
+        // Underline effect on hover
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            transition: width 0.3s ease;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+// Footer logo animations
+@keyframes footerLogoGlow {
+    0%, 100% {
+        filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.2));
+    }
+    50% {
+        filter: drop-shadow(0 6px 12px rgba(102, 126, 234, 0.3));
+    }
+}
+
+.footer-logo:hover {
+    animation: footerLogoGlow 2s ease-in-out infinite;
+}
+
+// Enhanced focus states for accessibility
+.single-footer-widget .logo a:focus {
+    outline: 2px solid rgba(102, 126, 234, 0.5);
+    outline-offset: 4px;
+    border-radius: 8px;
+}

@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Minimalist Background -->
+  <rect width="32" height="32" rx="8" fill="url(#faviconGradient)"/>
+  <rect width="32" height="32" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+  
+  <!-- Clean N Icon -->
+  <g transform="translate(8, 8)">
+    <path d="M3 3 L3 13 L5 13 L5 7 L11 13 L13 13 L13 3 L11 3 L11 9 L5 3 Z" fill="white" stroke="rgba(255,255,255,0.2)" stroke-width="0.2"/>
+    
+    <!-- Single accent dot -->
+    <circle cx="10" cy="4" r="1.2" fill="url(#accentGradient)" opacity="0.8"/>
+  </g>
+</svg>

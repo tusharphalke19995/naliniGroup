@@ -1,0 +1,343 @@
+// Electrical Engineering Component Styles
+
+.electrical-hero-area {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    
+    .electrical-hero-content {
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-btn {
+            .btn {
+                margin-right: 15px;
+                margin-bottom: 15px;
+                padding: 12px 30px;
+                font-weight: 600;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                
+                &.btn-primary {
+                    background: #fff;
+                    color: #ff6b35;
+                    border: none;
+                    
+                    &:hover {
+                        background: #f8f9fa;
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    }
+                }
+                
+                &.btn-outline-primary {
+                    background: transparent;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    
+                    &:hover {
+                        background: #fff;
+                        color: #ff6b35;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+    
+    .electrical-hero-image {
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+.electrical-services-area {
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+    }
+    
+    .single-electrical-service {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        height: 100%;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            
+            i {
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    }
+}
+
+.electrical-expertise-area {
+    .electrical-expertise-content {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        
+        .expertise-list {
+            .single-expertise {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 30px;
+                
+                .expertise-icon {
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #ff6b35, #f7931e);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                    flex-shrink: 0;
+                    
+                    i {
+                        color: #fff;
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                .expertise-content {
+                    h4 {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        color: #2c3e50;
+                        margin-bottom: 10px;
+                    }
+                    
+                    p {
+                        color: #6c757d;
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .electrical-expertise-image {
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.project-types-area {
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+    }
+    
+    .project-type {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        height: 100%;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .type-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            
+            i {
+                font-size: 1.8rem;
+                color: #fff;
+            }
+        }
+        
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    }
+}
+
+.electrical-cta-area {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    
+    .cta-content {
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin: 0;
+        }
+    }
+    
+    .cta-btn {
+        text-align: right;
+        
+        .btn {
+            background: #fff;
+            color: #ff6b35;
+            border: none;
+            padding: 15px 35px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #f8f9fa;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .electrical-hero-area {
+        padding: 80px 0 60px;
+        
+        .electrical-hero-content {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-btn {
+                .btn {
+                    display: block;
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    
+    .electrical-services-area,
+    .electrical-expertise-area,
+    .project-types-area {
+        .section-title {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .electrical-expertise-area {
+        .electrical-expertise-content {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .electrical-cta-area {
+        .cta-content {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        .cta-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}

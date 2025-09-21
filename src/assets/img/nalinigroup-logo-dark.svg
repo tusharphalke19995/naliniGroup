@@ -1,0 +1,41 @@
+<svg width="260" height="70" viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="whiteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="whiteGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Clean Icon for Dark Background -->
+  <g transform="translate(20, 20)" filter="url(#whiteGlow)">
+    <!-- Minimalist N -->
+    <g transform="scale(1.2)">
+      <path d="M5 5 L5 25 L8 25 L8 12 L17 25 L20 25 L20 5 L17 5 L17 18 L8 5 Z" fill="url(#whiteGradient)" stroke="url(#whiteGradient)" stroke-width="0.2"/>
+      
+      <!-- Single accent dot -->
+      <circle cx="22" cy="8" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- Clean Typography for Dark Theme -->
+  <text x="70" y="28" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="14" font-weight="300" fill="url(#whiteGradient)" letter-spacing="0.5px">
+    NaliniUdyogSamuh
+  </text>
+  <text x="70" y="42" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="9" font-weight="400" fill="url(#accentGradient)" letter-spacing="1.5px">
+    TECHNOLOGY SOLUTIONS
+  </text>
+  
+  <!-- Subtle Line -->
+  <line x1="70" y1="47" x2="240" y2="47" stroke="url(#accentGradient)" stroke-width="1" opacity="0.4"/>
+</svg>

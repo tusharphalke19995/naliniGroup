@@ -1,0 +1,157 @@
+// Enhanced Header Component Styles for NaliniUdyogSamuh
+
+.navbar-brand {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    
+    .logo-img {
+        height: 55px;
+        width: auto;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.15));
+        position: relative;
+        
+        &:hover {
+            transform: scale(1.08) translateY(-2px);
+            filter: drop-shadow(0 8px 16px rgba(102, 126, 234, 0.25));
+        }
+        
+        // Subtle glow effect
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        &:hover::before {
+            opacity: 0.3;
+        }
+    }
+}
+
+// Enhanced responsive logo sizing
+@media (max-width: 768px) {
+    .navbar-brand {
+        .logo-img {
+            height: 45px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        .logo-img {
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        .logo-img {
+            height: 35px;
+        }
+    }
+}
+
+// Enhanced logo positioning and effects
+.crimo-nav {
+    .navbar-brand {
+        margin-right: auto;
+        
+        .logo-img {
+            filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.15));
+            opacity: 1;
+        }
+    }
+}
+
+// Enhanced dark theme adjustments
+.navbar-style-two {
+    .navbar-brand {
+        .logo-img {
+            filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.1));
+            
+            &:hover {
+                filter: drop-shadow(0 8px 16px rgba(255, 255, 255, 0.2));
+            }
+        }
+    }
+}
+
+// Enhanced logo animations
+@keyframes logoFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.9);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes logoGlow {
+    0%, 100% {
+        filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.15));
+    }
+    50% {
+        filter: drop-shadow(0 6px 12px rgba(102, 126, 234, 0.25));
+    }
+}
+
+.navbar-brand .logo-img {
+    animation: logoFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    // Subtle breathing effect
+    &:hover {
+        animation: logoGlow 2s ease-in-out infinite;
+    }
+}
+
+// Logo loading state
+.navbar-brand.loading .logo-img {
+    opacity: 0.6;
+    animation: logoGlow 1.5s ease-in-out infinite;
+}
+
+// Enhanced focus states for accessibility
+.navbar-brand:focus {
+    outline: 2px solid rgba(102, 126, 234, 0.5);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+// Logo container enhancements
+.navbar-brand {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        transition: width 0.3s ease;
+    }
+    
+    &:hover::after {
+        width: 100%;
+    }
+}

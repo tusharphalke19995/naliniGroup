@@ -1,0 +1,324 @@
+// Software Development Component Styles
+
+.software-hero-area {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    .software-hero-content {
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-btn {
+            .btn {
+                margin-right: 15px;
+                margin-bottom: 15px;
+                padding: 12px 30px;
+                font-weight: 600;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                
+                &.btn-primary {
+                    background: #fff;
+                    color: #667eea;
+                    border: none;
+                    
+                    &:hover {
+                        background: #f8f9fa;
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    }
+                }
+                
+                &.btn-outline-primary {
+                    background: transparent;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    
+                    &:hover {
+                        background: #fff;
+                        color: #667eea;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+    
+    .software-hero-image {
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+.software-services-area {
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+    }
+    
+    .single-software-service {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        height: 100%;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            
+            i {
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    }
+}
+
+.technology-stack-area {
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+    }
+    
+    .tech-category {
+        background: #fff;
+        padding: 30px 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+        height: 100%;
+        
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .tech-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                padding: 8px 0;
+                color: #6c757d;
+                font-weight: 500;
+                border-bottom: 1px solid #f8f9fa;
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                &:before {
+                    content: "▶";
+                    color: #667eea;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.development-process-area {
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+    }
+    
+    .process-step {
+        text-align: center;
+        margin-bottom: 30px;
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    }
+}
+
+.software-cta-area {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    
+    .cta-content {
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin: 0;
+        }
+    }
+    
+    .cta-btn {
+        text-align: right;
+        
+        .btn {
+            background: #fff;
+            color: #667eea;
+            border: none;
+            padding: 15px 35px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #f8f9fa;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .software-hero-area {
+        padding: 80px 0 60px;
+        
+        .software-hero-content {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-btn {
+                .btn {
+                    display: block;
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    
+    .software-services-area,
+    .technology-stack-area,
+    .development-process-area {
+        .section-title {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .software-cta-area {
+        .cta-content {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        .cta-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
